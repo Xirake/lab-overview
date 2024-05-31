@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="not-index">
+        <script src="./scripts/inversion.js" defer></script>
+        <h1 id="theme">Ресторан "Day&Night"</h1>
+        <nav class="menu-pages">
+            
+            <a class="menu-pages-items" href="./index.html">Головна</a>
+            <a class="menu-pages-items" href="./about.html">Про нас</a>
+            <a class="menu-pages-items" href="./events.html">Події та акції</a>
+            <a class="menu-pages-items" href="./contacts.html">Контакти</a>
+            <a class="menu-pages-items" href="./reviews.html">Відгуки та рецензії</a>
+            <a class="menu-pages-items menu-pages-items-selected" href="./booking.html ">Бронювання</a>
+
+        </nav>
+    </header>
+
+
+    <div class="booking-form">
+        <h2>Бронювання Столику</h2>
+        <form action="./index.php" method="post"> 
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Ваш номер телефону" required>
+            
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Час:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="people">Кількість людей:</label>
+            <select id="people" name="people">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+
+            <button type="submit">Забронювати</button>
+        </form>
+    </div>
+</body>
+</html>

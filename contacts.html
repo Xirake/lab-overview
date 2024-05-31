@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="not-index">
+        <script src="./scripts/inversion.js" defer></script>
+        <h1 id="theme">Ресторан "Day&Night"</h1>
+        <nav class="menu-pages">
+            
+            <a class="menu-pages-items" href="./index.html">Головна</a>
+            <a class="menu-pages-items" href="./about.html">Про нас</a>
+            <a class="menu-pages-items" href="./events.html">Події та акції</a>
+            <a class="menu-pages-items menu-pages-items-selected" href="./contacts.html">Контакти</a>
+            <a class="menu-pages-items" href="./reviews.html">Відгуки та рецензії</a>
+            <a class="menu-pages-items" href="./booking.html ">Бронювання</a>
+
+        </nav>
+        
+    </header>
+    <div class="contact-section">
+        <div class="section-title">Адреса</div>
+        <p>м. Вінниця, вул. Хмельницьке шосе 1</p>
+    </div>
+    
+    <div class="contact-section">
+        <div class="section-title">Телефони, час роботи</div>
+        <p>Телефон: +380123456789</p>
+        <p>Час роботи: Пн-Пт, 9:00 - 18:00</p>
+    </div>
+    
+    <div class="contact-section">
+        <div class="section-title">Зворотній зв'язок</div>
+        <form class="feedback-form" action="#" method="post">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="phone">Номер телефону:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="feedback">Відгук:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+    
+            <label for="food-rating">Оцінка їжі (1-5):</label>
+            <select id="food-rating" name="food-rating" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+    
+            <label for="atmosphere-rating">Оцінка атмосфери (1-5):</label>
+            <select id="atmosphere-rating" name="atmosphere-rating" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3"></option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+    
+            <label for="price-rating">Оцінка ціни (1-5):</label>
+            <select id="price-rating" name="price-rating" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+    
+            <button type="submit">Надіслати</button>
+        </form>
+    </div>
+</body>
+</html>
